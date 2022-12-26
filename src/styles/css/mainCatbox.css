@@ -1,0 +1,136 @@
+.start {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  z-index: -10;
+}
+
+.blackbox {
+  width: 97vw;
+  height: 100vh;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.titlebox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: 35%;
+}
+
+.title {
+  font-family: "ethnocentric";
+  font-size: 50pt;
+  color: white;
+}
+
+.descriptionbox1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 90%;
+  bottom: 40%;
+}
+
+.descriptionbox2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 90%;
+  bottom: 35%;
+}
+
+.description {
+  font-family: "ethnocentric";
+  font-size: 30pt;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 30pt;
+  }
+  .descriptionbox1 {
+    bottom: 45%;
+  }
+  .descriptionbox2 {
+    bottom: 40%;
+  }
+  .description {
+    width: 80%;
+    font-size: 20pt;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 26pt;
+  }
+  .description {
+    width: 80%;
+    font-size: 15pt;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 23pt;
+  }
+  .descriptionbox1 {
+    bottom: 47%;
+  }
+  .descriptionbox2 {
+    bottom: 44%;
+  }
+  .description {
+    font-size: 13pt;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 300px) {
+  .title {
+    top: 40%;
+    font-size: 17pt;
+  }
+  .descriptionbox1 {
+    bottom: 46%;
+  }
+  .descriptionbox2 {
+    bottom: 43%;
+  }
+  .description {
+    width: 80%;
+    font-size: 10pt;
+    text-align: center;
+  }
+}
+@media screen and (max-height: 400px) {
+  .titlebox {
+    top: 3%;
+    font-size: 30pt;
+  }
+  .descriptionbox1 {
+    bottom: 35%;
+  }
+  .descriptionbox2 {
+    bottom: 28%;
+  }
+  .description {
+    bottom: 20%;
+    width: 80%;
+    font-size: 20pt;
+    text-align: center;
+  }
+}/*# sourceMappingURL=mainCatbox.css.map */

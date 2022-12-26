@@ -1,0 +1,68 @@
+.Textbox {
+  height: 100vh;
+  font-family: "Ethnocentric";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 50px;
+  z-index: 0;
+  background-color: #000000;
+}
+
+.Copytextbox1 {
+  flex-direction: row;
+  display: flex;
+}
+
+.Copytextbox2 {
+  flex-direction: row;
+  display: flex;
+}
+
+.Copytextbox3 {
+  flex-direction: row;
+  display: flex;
+}
+
+.leftText {
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.rightText {
+  color: #000000;
+  text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+}
+
+@media screen and (max-width: 900px) {
+  .Textbox {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Textbox {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Textbox {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .Textbox {
+    font-size: 13px;
+  }
+  .leftText {
+    margin-right: 10px;
+  }
+  .rightText {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+}
+@media screen and (max-height: 400px) {
+  .Textbox {
+    font-size: 35px;
+  }
+}/*# sourceMappingURL=copytext.css.map */

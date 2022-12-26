@@ -1,0 +1,176 @@
+.page3_layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 0;
+}
+.page3_Textbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.D-AD_description {
+    width: 100%;
+    flex-direction: column;
+}
+
+.descript1 {
+    font-family: 'Ethnocentric';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+
+}
+
+.descript2 {
+    font-family: 'Ethnocentric';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #F4E45B;
+}
+
+.descript3 {
+    font-family: 'Ethnocentric';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.D-AD_M {
+    width: 21%;
+    align-items: center;
+    justify-self: center;
+}
+
+.image {
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+
+    .D-AD_description {
+        margin-left: 5%;
+    }
+
+    .descript1 {
+        font-size: 15px;
+    }
+
+    .descript2 {
+        font-size: 35pt;
+        line-height: 60px;
+    }
+
+    .descript3 {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .page3_layout {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .D-AD_description {
+        margin-left: 5%;
+    }
+
+    .descript1 {
+        font-size: 12px;
+    }
+
+    .descript2 {
+        font-size: 28pt;
+        line-height: 60px;
+    }
+
+    .descript3 {
+        font-size: 15px;
+    }
+
+    .D-AD_M {
+        display: flex;
+        width: 40%;
+        margin-top:10%;
+        align-items: flex-start;
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .D-AD_description {
+        margin-left: 5%;
+    }
+
+    .descript1 {
+        font-size: 8px;
+    }
+
+    .descript2 {
+        font-size: 25pt;
+        line-height: 60px;
+    }
+
+    .descript3 {
+        font-size: 10px;
+    }
+
+}
+
+
+
+//폴더블 전면
+@media screen and (max-width: 300px) {
+    
+    .D-AD_description {
+        margin-left: 5%;
+        margin-right:5%;
+    }
+
+    .descript1 {
+        font-size: 5px;
+    }
+
+    .descript2 {
+        font-size: 20pt;
+        line-height: 60px;
+    }
+
+    .descript3 {
+        font-size: 8px;
+    }
+}
+
+//모바일 가로
+@media screen and (max-height: 400px) {
+    .D-AD_description {
+        margin-left: 5%;
+    }
+
+    .descript1 {
+        font-size: 8px;
+    }
+
+    .descript2 {
+        font-size: 25pt;
+        line-height: 60px;
+    }
+
+    .descript3 {
+        font-size: 10px;
+    }
+}
