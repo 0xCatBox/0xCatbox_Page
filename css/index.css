@@ -5,10 +5,11 @@
   align-items: center;
   max-height: 100vh;
   z-index: -10;
+  overflow: hidden;
 }
 
 .blackbox {
-  width: 97vw;
+  width: 100vw;
   height: 100vh;
   background-color: black;
   border-radius: 50%;
@@ -20,12 +21,12 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  top: 40%;
+  top: 35%;
 }
 
 .title {
   font-family: "ethnocentric";
-  font-size: 50pt;
+  font-size: 4rem;
   color: white;
 }
 
@@ -37,7 +38,7 @@
   flex-direction: column;
   overflow: hidden;
   width: 90%;
-  bottom: 45%;
+  bottom: 40%;
 }
 
 .descriptionbox2 {
@@ -48,19 +49,30 @@
   flex-direction: column;
   overflow: hidden;
   width: 90%;
-  bottom: 40%;
+  bottom: 35%;
 }
 
 .description {
   font-family: "ethnocentric";
-  font-size: 30pt;
+  font-size: 1.5rem;
   text-align: center;
   color: white;
 }
 
+.arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+  z-index: 100;
+  height: 50px;
+  color: #fff;
+}
+
 @media screen and (max-width: 900px) {
   .title {
-    font-size: 30pt;
+    font-size: 2.5rem;
   }
   .descriptionbox1 {
     bottom: 45%;
@@ -70,23 +82,23 @@
   }
   .description {
     width: 80%;
-    font-size: 20pt;
+    font-size: 1.3rem;
     text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
   .title {
-    font-size: 26pt;
+    font-size: 2rem;
   }
   .description {
     width: 80%;
-    font-size: 15pt;
+    font-size: 1rem;
     text-align: center;
   }
 }
 @media screen and (max-width: 400px) {
   .title {
-    font-size: 23pt;
+    font-size: 1.5rem;
   }
   .descriptionbox1 {
     bottom: 47%;
@@ -95,7 +107,7 @@
     bottom: 44%;
   }
   .description {
-    font-size: 14pt;
+    font-size: 0.8rem;
     text-align: center;
   }
 }
@@ -118,7 +130,7 @@
 }
 @media screen and (max-height: 400px) {
   .titlebox {
-    top: 35%;
+    top: 3%;
     font-size: 30pt;
   }
   .descriptionbox1 {
@@ -136,7 +148,7 @@
 }
 .frame {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
 }
 
 .frametopbox {
@@ -169,36 +181,51 @@
 
 .framerightbox {
   position: fixed;
-  width: 30px;
+  width: 20px;
   height: 100%;
   right: 0;
   background-color: white;
 }
 
+@media screen and (max-width: 300px) {
+  .frametopbox {
+    height: 10px;
+  }
+  .frameleftbox {
+    width: 10px;
+  }
+  .framerightbox {
+    width: 10px;
+  }
+  .framebottombox {
+    height: 10px;
+  }
+}
 .Textbox {
+  height: 100vh;
   font-family: "Ethnocentric";
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 40px;
+  font-size: 50px;
+  z-index: 0;
+  background-color: #000000;
+  white-space: nowrap;
 }
 
 .Copytextbox1 {
   flex-direction: row;
-  position: relative;
   display: flex;
 }
 
 .Copytextbox2 {
   flex-direction: row;
-  position: relative;
   display: flex;
 }
 
 .Copytextbox3 {
   flex-direction: row;
-  position: relative;
   display: flex;
 }
 
@@ -214,22 +241,33 @@
 
 @media screen and (max-width: 900px) {
   .Textbox {
-    font-size: 35px;
+    font-size: 33px;
   }
 }
 @media screen and (max-width: 600px) {
   .Textbox {
-    font-size: 35px;
+    font-size: 28px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .Textbox {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 400px) {
+  .Textbox {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 300px) {
   .Textbox {
-    font-size: 35px;
+    font-size: 13px;
+  }
+  .leftText {
+    margin-right: 10px;
+  }
+  .rightText {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   }
 }
 @media screen and (max-height: 400px) {
@@ -237,14 +275,340 @@
     font-size: 35px;
   }
 }
+.page3_layout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 0;
+}
+
+.page3_Textbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.D-AD_description {
+  width: 100%;
+  flex-direction: column;
+}
+
+.descript1 {
+  font-family: "Ethnocentric";
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 40px;
+  letter-spacing: 0.06em;
+  text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+}
+
+.descript2 {
+  font-family: "Ethnocentric";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  color: #F4E45B;
+}
+
+.descript3 {
+  font-family: "Ethnocentric";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  white-space: nowrap;
+  color: #FFFFFF;
+}
+
+.D-AD_M {
+  width: 21%;
+  align-items: center;
+  justify-self: center;
+}
+
+.image {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .D-AD_description {
+    margin-left: 5%;
+  }
+  .descript1 {
+    font-size: 18px;
+  }
+  .descript2 {
+    font-size: 40pt;
+    line-height: 60px;
+  }
+  .descript3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .D-AD_description {
+    margin-left: 5%;
+  }
+  .descript1 {
+    font-size: 15px;
+  }
+  .descript2 {
+    font-size: 35pt;
+    line-height: 60px;
+  }
+  .descript3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page3_layout {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .D-AD_description {
+    margin-left: 5%;
+  }
+  .descript1 {
+    font-size: 12px;
+  }
+  .descript2 {
+    font-size: 28pt;
+    line-height: 60px;
+  }
+  .descript3 {
+    font-size: 15px;
+  }
+  .D-AD_M {
+    display: flex;
+    width: 40%;
+    margin-top: 10%;
+    align-items: flex-start;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .D-AD_description {
+    margin-left: 5%;
+  }
+  .descript1 {
+    font-size: 8px;
+  }
+  .descript2 {
+    font-size: 25pt;
+    line-height: 60px;
+  }
+  .descript3 {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .D-AD_description {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .descript1 {
+    font-size: 5px;
+  }
+  .descript2 {
+    font-size: 20pt;
+    line-height: 60px;
+  }
+  .descript3 {
+    font-size: 8px;
+  }
+}
+@media screen and (max-height: 400px) {
+  .D-AD_description {
+    margin-left: 5%;
+  }
+  .descript1 {
+    font-size: 8px;
+  }
+  .descript2 {
+    font-size: 25pt;
+    line-height: 60px;
+  }
+  .descript3 {
+    font-size: 10px;
+  }
+}
+.page4_layout {
+  background: #82887C;
+  height: auto;
+}
+
+.Award_Section {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  width: 100%;
+}
+
+.Award {
+  position: relative;
+  z-index: 0;
+  height: 65px;
+  font-family: "Ethnocentric";
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #F4E45B;
+}
+
+.Award_table_title {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 40px;
+  margin-top: 5%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Raleway";
+  font-size: 23px;
+  font-weight: 900;
+  color: #FFFFFF;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+
+.line {
+  display: block;
+  position: relative;
+  width: 80%;
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+
+.Achievement {
+  position: relative;
+  width: 35%;
+  margin-left: 15%;
+}
+
+.Project {
+  position: relative;
+  width: 19.5%;
+}
+
+.Date {
+  display: flex;
+  position: relative;
+  width: 20.5%;
+}
+
+.Award_table {
+  position: relative;
+  width: 80%;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+.Award_row {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15%;
+  height: auto;
+  min-height: 100px;
+  font-weight: 400;
+  border-width: 0px 0px 0.9px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+
+.Award_Achievement {
+  width: 45%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.Award_Project {
+  width: 27%;
+  font-size: 20px;
+}
+
+.Award_Date {
+  width: 24%;
+  font-size: 20px;
+}
+
+.Team_Vision_Section {
+  padding: 10%;
+  width: 80%;
+}
+
+.Team_vision {
+  position: relative;
+  display: flex;
+  width: 100%;
+  font-family: "Ethnocentric";
+  font-size: 35px;
+  align-items: center;
+  color: #F4E45B;
+}
+
+.vision {
+  position: relative;
+  font-family: "Raleway";
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 15%;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.vision_text {
+  height: auto;
+  margin-bottom: 5%;
+  word-break: normal;
+}
+
+@media screen and (max-width: 900px) {
+  .Award {
+    font-size: 28px;
+  }
+  .Team_vision {
+    font-size: 28px;
+  }
+  .Award_table_title {
+    font-size: 1rem;
+  }
+  .Award_Achievement {
+    font-size: 16px;
+  }
+  .Award_Project {
+    font-size: 18px;
+    word-break: break-all;
+  }
+  .Award_Date {
+    font-size: 18px;
+  }
+  .vision {
+    font-size: 17px;
+  }
+}
+html {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   min-height: 100%;
   overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.page {
   overflow-x: hidden;
 }
 

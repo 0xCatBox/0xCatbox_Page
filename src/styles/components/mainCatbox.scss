@@ -27,7 +27,7 @@
 
 .title {
     font-family:"ethnocentric";
-    font-size: 50pt;
+    font-size: 4rem;
     color: white;
 }
 
@@ -56,7 +56,7 @@
 
 .description {
     font-family:"ethnocentric";
-    font-size: 30pt;
+    font-size: 1.5rem;
     text-align: center;
     color: white;
 }
@@ -72,39 +72,51 @@
 }
 
 
-
-
-
-//*모바일 세로
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .title {
-        font-size: 30pt;
-        // margin-bottom: 20px;
+        font-size: 3.3rem;
     }
-
     .descriptionbox1{
         bottom: 45%;
     }
     .descriptionbox2{
         bottom: 40%;
     }
-
     .description {
         width: 80%;
-        font-size: 20pt;
+        font-size: 1.5rem;
         text-align: center;
     }
+}
 
+
+//*모바일 세로
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 2.5rem;
+        // margin-bottom: 20px;
+    }
+    .descriptionbox1{
+        bottom: 45%;
+    }
+    .descriptionbox2{
+        bottom: 40%;
+    }
+    .description {
+        width: 80%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .title {
-        font-size: 26pt;
+        font-size: 2rem;
         // margin-bottom: 20px;
     }
     .description {
         width: 80%;
-        font-size: 15pt;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -112,7 +124,7 @@
 
 @media screen and (max-width: 400px) {
     .title {
-        font-size: 23pt;
+        font-size: 1.5rem;
     }
     .descriptionbox1{
         bottom: 47%;
@@ -122,7 +134,7 @@
     }
 
     .description {
-        font-size: 13pt;
+        font-size: 0.7rem;
         text-align: center;
     }
 
@@ -134,7 +146,7 @@
 @media screen and (max-width: 300px) {
     .title {
         top:40%;
-        font-size: 17pt;
+        font-size: 1.1rem;
     }
     .descriptionbox1{
         bottom: 46%;
@@ -145,7 +157,7 @@
 
     .description {
         width: 80%;
-        font-size: 10pt;
+        font-size: 0.6rem;
         text-align: center;
     }
 }
@@ -153,8 +165,8 @@
 //모바일 가로
 @media screen and (max-height: 400px) {
     .titlebox {
-        top:3%;
-        font-size: 30pt;
+        top:30%;
+        font-size: 2rem;
     }
     .descriptionbox1{
         bottom: 35%;
@@ -165,7 +177,7 @@
     .description {
         bottom:20%;
         width: 80%;
-        font-size: 20pt;
+        font-size: 1.5rem;
         text-align: center;
     }
 }

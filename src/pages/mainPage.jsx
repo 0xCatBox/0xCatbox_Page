@@ -4,7 +4,7 @@ import Catbox from "../components/Title";
 import Frame from "../components/frame";
 import CopyText from "../components/copytext";
 import D_AD from "../components/D_AD";
-
+import Team from "../components/teamintro"
 const Main = () => {
 
     return(
@@ -13,6 +13,8 @@ const Main = () => {
                 <Catbox/>
                 <CopyText/>
                 <D_AD/>
+                <Team/>
+                <Frame/>
             </div>
     )
 }

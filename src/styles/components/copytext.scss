@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 50px;
+    font-size: 2.5rem;
     z-index: 0;
     background-color: #000000;
     white-space: nowrap;
@@ -36,34 +36,41 @@
 }
 
 
+@media screen and (max-width:1200px) {
+    .Textbox {
+        font-size: 2rem;
+    }
+}
+
+
 //*모바일 세로
 @media screen and (max-width: 900px) {
     .Textbox {
-        font-size: 33px;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     .Textbox {
-        font-size: 28px;
+        font-size: 1.3rem;
     }
 }
 @media screen and (max-width: 500px) {
     .Textbox {
-        font-size: 20px;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 400px) {
     .Textbox {
-        font-size: 17px;
+        font-size: 0.8rem;
     }
 }
 
 //폴더블 전면
 @media screen and (max-width: 300px) {
     .Textbox {
-        font-size: 13px;
+        font-size: 0.7rem;
     }
     .leftText {
         margin-right: 10px;
@@ -76,6 +83,6 @@
 //모바일 가로
 @media screen and (max-height: 400px) {
     .Textbox {
-        font-size: 35px;
+        font-size: 1.5rem;
     }
 }

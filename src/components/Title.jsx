@@ -65,15 +65,15 @@ const Catbox = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.path
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
+            initial={{ pathLength: 0.2 }}
+            animate={{ pathLength: 1,opacity:[0,1] }}
             transition={{
               delay: 3.5,
               duration: 1,
               ease: "easeOut",
               repeat: Infinity,
               repeatType: "loop",
-              repeatDelay: 0.5,
+              repeatDelay: 0.3,
             }}
             strokeWidth={1}
             strokeDasharray="0 1"

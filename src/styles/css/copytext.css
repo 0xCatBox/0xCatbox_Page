@@ -5,9 +5,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 50px;
+  font-size: 2.5rem;
   z-index: 0;
   background-color: #000000;
+  white-space: nowrap;
 }
 
 .Copytextbox1 {
@@ -35,24 +36,34 @@
   text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
 }
 
+@media screen and (max-width: 1200px) {
+  .Textbox {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 900px) {
   .Textbox {
-    font-size: 33px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {
   .Textbox {
-    font-size: 28px;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Textbox {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 400px) {
   .Textbox {
-    font-size: 17px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 300px) {
   .Textbox {
-    font-size: 13px;
+    font-size: 0.7rem;
   }
   .leftText {
     margin-right: 10px;
@@ -63,6 +74,6 @@
 }
 @media screen and (max-height: 400px) {
   .Textbox {
-    font-size: 35px;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=copytext.css.map */
