@@ -22,7 +22,7 @@ const Team = () => {
             <div className="Award_Date">2022.11</div>
           </div>
           <div className="Award_row">
-          <div className="Award_Achievement">Klaymakers 22 - Public Goods Runner Up</div>
+          <div className="Award_Achievement">Klaymakers 22 - Public Goods Track FinalList & winner</div>
             <div className="Award_Project">D-AD</div>
             <div className="Award_Date">2022.10</div>
           </div>
