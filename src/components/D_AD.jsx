@@ -7,7 +7,7 @@ const D_AD = () => {
     <div className="page3_layout">
       <div className="page3_Textbox">
         <div className="D-AD_description">
-          <div className="descript1">Web3 is from 0xCatbox</div>
+          <div className="descript1">Web3 starts at 0xCatbox</div>
           <div className="descript2">D-AD</div>
           <div className="descript3">Advertising protocol</div>
           <div className="descript3">created using Zkp for web3</div>
