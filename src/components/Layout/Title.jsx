@@ -1,10 +1,12 @@
 import { React } from "react";
-// import { useState, useEffect } from "react";
-// import { useState,useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 
 const Catbox = () => {
-  return (
+  const { t } = useTranslation();
+
+  return (  
     <div className="start">
       <motion.div
         initial={{ scale: 0.01 }}
@@ -16,7 +18,6 @@ const Catbox = () => {
       >
         <div className="blackbox"></div>
       </motion.div>
-
       <div className="titlebox">
         <motion.div
           className="title"
@@ -41,7 +42,7 @@ const Catbox = () => {
             ease: "backInOut",
           }}
         >
-          Make trusted
+          {t('Make trusted')}
         </motion.div>
       </div>
       <div className="descriptionbox2">
@@ -55,7 +56,7 @@ const Catbox = () => {
             ease: "backInOut",
           }}
         >
-          Internet for web3
+          {t('Internet for web3')}
         </motion.div>
       </div>
       <div className="arrow">

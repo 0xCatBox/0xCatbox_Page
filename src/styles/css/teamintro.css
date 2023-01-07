@@ -84,6 +84,10 @@
   word-break: keep-all;
 }
 
+.Award_row:hover {
+  color: black;
+}
+
 .Award_Achievement {
   width: 49%;
   margin-top: 20px;
@@ -161,7 +165,7 @@
     width: 59%;
   }
   .Award_Achievement {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     width: 59%;
   }
   .Project {
@@ -182,7 +186,7 @@
   }
   .vision {
     margin-left: 10%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -196,7 +200,7 @@
     font-size: 1rem;
   }
   .Award_table_title {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     height: 30px;
     border-width: 1.5px 0px;
   }
@@ -211,14 +215,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
     width: 59%;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .Project {
     width: 25%;
   }
   .Award_Project {
     width: 25%;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .Date {
     width: 15%;
@@ -227,12 +231,12 @@
   .Award_Date {
     width: 15%;
     text-align: right;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .vision {
     margin-left: 0;
     width: 100%;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin-top: 10%;
   }
   .line {
@@ -247,19 +251,19 @@
     font-size: 0.8rem;
   }
   .Award_table_title {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     height: 25px;
   }
   .Award_Achievement {
-    font-size: 0.5rem;
+    font-size: 0.55rem;
   }
   .Award_Project {
-    font-size: 0.5rem;
+    font-size: 0.55rem;
   }
   .Award_Date {
-    font-size: 0.5rem;
+    font-size: 0.55rem;
   }
   .vision {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 }/*# sourceMappingURL=teamintro.css.map */

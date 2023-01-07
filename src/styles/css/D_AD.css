@@ -59,6 +59,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .page3_Textbox {
+    width: 50%;
+  }
   .D-AD_description {
     margin-left: 5%;
   }
@@ -96,6 +99,9 @@
     justify-content: center;
     flex-direction: column;
   }
+  .page3_Textbox {
+    width: 85%;
+  }
   .D-AD_description {
     margin-left: 5%;
   }
@@ -118,11 +124,14 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .page3_Textbox {
+    width: 80%;
+  }
   .D-AD_description {
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
     line-height: 30px;
   }
   .descript2 {

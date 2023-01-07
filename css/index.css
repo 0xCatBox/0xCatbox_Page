@@ -13,6 +13,7 @@
   height: 100vh;
   background-color: black;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .titlebox {
@@ -70,6 +71,22 @@
   color: #fff;
 }
 
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 3.3rem;
+  }
+  .descriptionbox1 {
+    bottom: 45%;
+  }
+  .descriptionbox2 {
+    bottom: 40%;
+  }
+  .description {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 900px) {
   .title {
     font-size: 2.5rem;
@@ -107,14 +124,14 @@
     bottom: 44%;
   }
   .description {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
   }
 }
 @media screen and (max-width: 300px) {
   .title {
     top: 40%;
-    font-size: 17pt;
+    font-size: 1.1rem;
   }
   .descriptionbox1 {
     bottom: 46%;
@@ -124,14 +141,14 @@
   }
   .description {
     width: 80%;
-    font-size: 10pt;
+    font-size: 0.6rem;
     text-align: center;
   }
 }
 @media screen and (max-height: 400px) {
   .titlebox {
-    top: 3%;
-    font-size: 30pt;
+    top: 30%;
+    font-size: 2rem;
   }
   .descriptionbox1 {
     bottom: 35%;
@@ -142,7 +159,7 @@
   .description {
     bottom: 20%;
     width: 80%;
-    font-size: 20pt;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -177,6 +194,7 @@
   height: 100%;
   left: 0;
   background-color: white;
+  z-index: 100;
 }
 
 .framerightbox {
@@ -185,9 +203,10 @@
   height: 100%;
   right: 0;
   background-color: white;
+  z-index: 100;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   .frametopbox {
     height: 10px;
   }
@@ -208,7 +227,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 50px;
+  font-size: 2.5rem;
   z-index: 0;
   background-color: #000000;
   white-space: nowrap;
@@ -239,29 +258,34 @@
   text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
 }
 
+@media screen and (max-width: 1200px) {
+  .Textbox {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 900px) {
   .Textbox {
-    font-size: 33px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {
   .Textbox {
-    font-size: 28px;
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 500px) {
   .Textbox {
-    font-size: 20px;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 400px) {
   .Textbox {
-    font-size: 17px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 300px) {
   .Textbox {
-    font-size: 13px;
+    font-size: 0.7rem;
   }
   .leftText {
     margin-right: 10px;
@@ -272,7 +296,7 @@
 }
 @media screen and (max-height: 400px) {
   .Textbox {
-    font-size: 35px;
+    font-size: 1.5rem;
   }
 }
 .page3_layout {
@@ -300,7 +324,7 @@
 .descript1 {
   font-family: "Ethnocentric";
   font-weight: 400;
-  font-size: 23px;
+  font-size: 1.2rem;
   line-height: 40px;
   letter-spacing: 0.06em;
   text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
@@ -310,7 +334,7 @@
   font-family: "Ethnocentric";
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 2.5rem;
   line-height: 60px;
   color: #F4E45B;
 }
@@ -319,7 +343,7 @@
   font-family: "Ethnocentric";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 1.5rem;
   white-space: nowrap;
   color: #FFFFFF;
 }
@@ -336,18 +360,24 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .page3_Textbox {
+    width: 50%;
+  }
   .D-AD_description {
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 18px;
+    font-size: 0.9rem;
   }
   .descript2 {
-    font-size: 40pt;
+    font-size: 2rem;
     line-height: 60px;
   }
   .descript3 {
-    font-size: 20px;
+    font-size: 1rem;
+  }
+  .D-AD_M {
+    width: 18%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -355,14 +385,14 @@
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 15px;
+    font-size: 0.7rem;
   }
   .descript2 {
-    font-size: 35pt;
+    font-size: 1.5rem;
     line-height: 60px;
   }
   .descript3 {
-    font-size: 18px;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -370,18 +400,21 @@
     justify-content: center;
     flex-direction: column;
   }
+  .page3_Textbox {
+    width: 85%;
+  }
   .D-AD_description {
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 12px;
+    font-size: 0.6rem;
   }
   .descript2 {
-    font-size: 28pt;
+    font-size: 1.3rem;
     line-height: 60px;
   }
   .descript3 {
-    font-size: 15px;
+    font-size: 0.8rem;
   }
   .D-AD_M {
     display: flex;
@@ -392,18 +425,22 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .page3_Textbox {
+    width: 80%;
+  }
   .D-AD_description {
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 8px;
+    font-size: 0.3rem;
+    line-height: 30px;
   }
   .descript2 {
-    font-size: 25pt;
-    line-height: 60px;
+    font-size: 1rem;
+    line-height: 50px;
   }
   .descript3 {
-    font-size: 10px;
+    font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 300px) {
@@ -412,41 +449,50 @@
     margin-right: 5%;
   }
   .descript1 {
-    font-size: 5px;
+    font-size: 0.3rem;
+    line-height: 30px;
   }
   .descript2 {
-    font-size: 20pt;
-    line-height: 60px;
+    font-size: 0.9rem;
+    line-height: 40px;
   }
   .descript3 {
-    font-size: 8px;
+    font-size: 0.5rem;
   }
 }
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 440px) {
   .D-AD_description {
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 8px;
+    font-size: 0.6rem;
   }
   .descript2 {
-    font-size: 25pt;
+    font-size: 2rem;
     line-height: 60px;
   }
   .descript3 {
-    font-size: 10px;
+    font-size: 0.9rem;
+  }
+  .D-AD_M {
+    width: 15%;
   }
 }
 .page4_layout {
   background: #82887C;
   height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
 }
 
 .Award_Section {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
-  width: 100%;
+  width: 80%;
 }
 
 .Award {
@@ -454,7 +500,7 @@
   z-index: 0;
   height: 65px;
   font-family: "Ethnocentric";
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -464,14 +510,14 @@
 .Award_table_title {
   display: flex;
   position: relative;
-  width: 80%;
-  height: 40px;
-  margin-top: 5%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  margin-top: 5%;
   font-family: "Raleway";
-  font-size: 23px;
+  font-size: 1.2rem;
   font-weight: 900;
   color: #FFFFFF;
   border-width: 2px 0px;
@@ -479,35 +525,25 @@
   border-color: #FFFFFF;
 }
 
-.line {
-  display: block;
-  position: relative;
-  width: 80%;
-  border-width: 2px 0px 0px 0px;
-  border-style: solid;
-  border-color: #FFFFFF;
-}
-
 .Achievement {
   position: relative;
-  width: 35%;
+  width: 49%;
   margin-left: 15%;
 }
 
 .Project {
   position: relative;
-  width: 19.5%;
+  width: 25%;
 }
 
 .Date {
-  display: flex;
   position: relative;
-  width: 20.5%;
+  width: 25%;
 }
 
 .Award_table {
   position: relative;
-  width: 80%;
+  width: 100%;
   flex-direction: column;
   color: #FFFFFF;
 }
@@ -520,29 +556,30 @@
   align-items: center;
   margin-left: 15%;
   height: auto;
-  min-height: 100px;
+  min-height: 60px;
   font-weight: 400;
   border-width: 0px 0px 0.9px 0px;
   border-style: solid;
   border-color: #FFFFFF;
+  word-break: keep-all;
 }
 
 .Award_Achievement {
-  width: 45%;
+  width: 49%;
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 20px;
-  font-size: 18px;
+  font-size: 0.9rem;
 }
 
 .Award_Project {
-  width: 27%;
-  font-size: 20px;
+  width: 25%;
+  font-size: 1rem;
 }
 
 .Award_Date {
-  width: 24%;
-  font-size: 20px;
+  width: 25%;
+  font-size: 1rem;
 }
 
 .Team_Vision_Section {
@@ -555,7 +592,7 @@
   display: flex;
   width: 100%;
   font-family: "Ethnocentric";
-  font-size: 35px;
+  font-size: 1.8rem;
   align-items: center;
   color: #F4E45B;
 }
@@ -567,40 +604,262 @@
   width: 80%;
   margin-top: 5%;
   margin-left: 15%;
-  font-size: 20px;
+  font-size: 1rem;
   color: #FFFFFF;
 }
 
 .vision_text {
   height: auto;
   margin-bottom: 5%;
-  word-break: normal;
+  word-break: keep-all;
+}
+
+.line {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
 }
 
 @media screen and (max-width: 900px) {
   .Award {
-    font-size: 28px;
+    font-size: 1.4rem;
   }
   .Team_vision {
-    font-size: 28px;
+    font-size: 1.4rem;
   }
   .Award_table_title {
     font-size: 1rem;
   }
+  .Award_row {
+    margin-left: 10%;
+  }
+  .Achievement {
+    margin-left: 10%;
+    width: 59%;
+  }
   .Award_Achievement {
-    font-size: 16px;
+    font-size: 0.8rem;
+    width: 59%;
+  }
+  .Project {
+    width: 25%;
   }
   .Award_Project {
-    font-size: 18px;
-    word-break: break-all;
+    width: 25%;
+    font-size: 0.8rem;
+  }
+  .Date {
+    width: 15%;
+    text-align: right;
   }
   .Award_Date {
-    font-size: 18px;
+    font-size: 0.8rem;
+    width: 15%;
+    text-align: right;
   }
   .vision {
-    font-size: 17px;
+    margin-left: 10%;
+    font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .page4_layout {
+    min-height: 100vh;
+  }
+  .Award {
+    font-size: 1rem;
+  }
+  .Team_vision {
+    font-size: 1rem;
+  }
+  .Award_table_title {
+    font-size: 0.8rem;
+    height: 30px;
+    border-width: 1.5px 0px;
+  }
+  .Award_row {
+    margin-left: 0;
+  }
+  .Achievement {
+    margin-left: 0;
+    width: 59%;
+  }
+  .Award_Achievement {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 59%;
+    font-size: 0.7rem;
+  }
+  .Project {
+    width: 25%;
+  }
+  .Award_Project {
+    width: 25%;
+    font-size: 0.7rem;
+  }
+  .Date {
+    width: 15%;
+    text-align: right;
+  }
+  .Award_Date {
+    width: 15%;
+    text-align: right;
+    font-size: 0.7rem;
+  }
+  .vision {
+    margin-left: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    margin-top: 10%;
+  }
+  .line {
+    border-width: 1.5px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Award {
+    font-size: 0.8rem;
+  }
+  .Team_vision {
+    font-size: 0.8rem;
+  }
+  .Award_table_title {
+    font-size: 0.65rem;
+    height: 25px;
+  }
+  .Award_Achievement {
+    font-size: 0.55rem;
+  }
+  .Award_Project {
+    font-size: 0.55rem;
+  }
+  .Award_Date {
+    font-size: 0.55rem;
+  }
+  .vision {
+    font-size: 0.7rem;
+  }
+}
+.Langbutton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 4%;
+  top: 5%;
+  color: white;
+}
+.Langbutton .LangIcon {
+  width: 100%;
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+}
+
+.Langbutton:hover .button {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+}
+
+.button {
+  display: none;
+}
+
+.toggleOn {
+  width: 2rem;
+  font-weight: 900;
+}
+
+.toggleOff {
+  width: 2rem;
+  color: gray;
+}
+
+@media screen and (max-width: 900px) {
+  .Langbutton:hover .button {
+    font-size: 0.8rem;
+  }
+  .toggleOff {
+    width: 1.7rem;
+  }
+  .toggleOn {
+    width: 1.7rem;
+  }
+  .Langbutton {
+    right: 5%;
+  }
+  .Langbutton .LangIcon {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Langbutton:hover .button {
+    font-size: 0.6rem;
+  }
+  .toggleOff {
+    width: 1.5rem;
+  }
+  .toggleOn {
+    width: 1.5rem;
+  }
+  .Langbutton {
+    top: 3%;
+  }
+  .Langbutton .LangIcon {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Langbutton:hover .button {
+    font-size: 0.7rem;
+  }
+  .toggleOff {
+    width: 1.3rem;
+  }
+  .toggleOn {
+    width: 1.3rem;
+  }
+  .Langbutton {
+    top: 3%;
+  }
+  .Langbutton .LangIcon {
+    width: 85%;
+  }
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  border-color: white;
+  border-top-width: 2px;
+  border-style: solid;
+  height: 8vh;
+  padding-bottom: 20px;
+}
+
+.footer_title {
+  font-family: "Ethnocentric";
+  color: white;
+  font-size: 1.3rem;
+}
+
+.git {
+  width: 10%;
+  color: white;
+}
+
+.mail {
+  width: 10%;
+  color: white;
+}
+
 html {
   font-size: 20px;
 }

@@ -1,22 +1,25 @@
 import React from "react";
 
-import Catbox from "../components/Title";
-import Frame from "../components/frame";
-import CopyText from "../components/copytext";
-import D_AD from "../components/D_AD";
-import Team from "../components/teamintro"
+import Catbox from "../components/Layout/Title";
+import Frame from "../components/Layout/frame";
+import CopyText from "../components/Layout/copytext";
+import D_AD from "../components/Layout/D_AD";
+import Team from "../components/Layout/teamintro"
+import LanguageButton from "../components/LanguageButton";
+
 const Main = () => {
 
-    return(
-            <div>
-                <Frame/>
-                <Catbox/>
-                <CopyText/>
-                <D_AD/>
-                <Team/>
-                <Frame/>
-            </div>
-    )
+    return (
+      <div>
+        <Frame />
+        <LanguageButton />
+        <Catbox />
+        <CopyText />
+        <D_AD />
+        <Team />
+        <Frame />
+      </div>
+    );
 }
 
 export default Main;
