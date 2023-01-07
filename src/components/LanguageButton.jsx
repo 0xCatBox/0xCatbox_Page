@@ -28,13 +28,11 @@ function LanguageButton(props){
           {alignment == "ko" ? (
             <div className='button'>
                 <div className="toggleOn">ko</div>
-                <div>|</div>
                 <div className="toggleOff">en</div>
             </div>
           ) : (
             <div className='button'>
                 <div className="toggleOn">en</div>
-                <div>|</div>
                     <div className="toggleOff">ko</div>
             </div>
           )}

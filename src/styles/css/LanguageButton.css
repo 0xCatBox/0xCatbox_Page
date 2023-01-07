@@ -31,6 +31,12 @@
   font-weight: 900;
 }
 
+.toggleOn::after {
+  content: "|";
+  float: right;
+  color: gray;
+}
+
 .toggleOff {
   width: 2rem;
   color: gray;

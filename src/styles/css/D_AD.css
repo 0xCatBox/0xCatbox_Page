@@ -1,18 +1,43 @@
+.page3_background {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 -20px 0 white;
+  height: 100vh;
+  z-index: 5;
+  color: white;
+}
+
 .page3_layout {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  clip-path: inset(0 0 0 0);
+}
+
+.black {
+  position: fixed;
+  width: 100vw;
   height: 100vh;
   background-color: black;
-  z-index: 0;
+  backface-visibility: hidden;
+  left: 20px;
+  bottom: 20px;
+  background-attachment: fixed;
 }
 
 .page3_Textbox {
   display: flex;
+  position: fixed;
+  background-attachment: fixed;
+  left: calc(10vw + 20px);
+  height: calc(100vh - 20px);
+  bottom: 0;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 }
 
 .D-AD_description {
@@ -26,7 +51,7 @@
   font-size: 1.2rem;
   line-height: 40px;
   letter-spacing: 0.06em;
-  text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  color: gray;
 }
 
 .descript2 {
@@ -36,6 +61,7 @@
   font-size: 2.5rem;
   line-height: 60px;
   color: #F4E45B;
+  margin-bottom: 2vh;
 }
 
 .descript3 {
@@ -48,14 +74,20 @@
 }
 
 .D-AD_M {
-  width: 21%;
+  position: fixed;
+  display: flex;
+  width: calc(15vw + 1%);
+  bottom: 0;
+  height: calc(100vh - 40px);
+  right: calc(10vw + 20px);
   align-items: center;
   justify-self: center;
+  background-attachment: fixed;
 }
 
 .image {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {
@@ -66,14 +98,14 @@
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .descript2 {
     font-size: 2rem;
     line-height: 60px;
   }
   .descript3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .D-AD_M {
     width: 18%;
@@ -95,32 +127,36 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .page3_layout {
-    justify-content: center;
-    flex-direction: column;
+  .page3_background {
+    box-shadow: 0 -10px 0 white;
+    margin-bottom: 10px;
+  }
+  .black {
+    left: 10px;
+    bottom: 10px;
   }
   .page3_Textbox {
+    height: calc(50vh - 40px);
+    left: calc(5vw + 20px);
     width: 85%;
   }
   .D-AD_description {
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .descript2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 60px;
   }
   .descript3 {
-    font-size: 0.8rem;
+    font-size: calc(0.6rem + 1vw);
   }
   .D-AD_M {
-    display: flex;
-    width: 40%;
-    margin-top: 10%;
-    align-items: flex-start;
-    justify-self: center;
+    width: calc(30% + 10vw);
+    left: calc(30vw + 20px);
+    bottom: 15%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -131,15 +167,20 @@
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     line-height: 30px;
   }
   .descript2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 50px;
   }
   .descript3 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+  }
+  .D-AD_M {
+    width: calc(30% + 10vw);
+    left: calc(28vw + 20px);
+    bottom: 15%;
   }
 }
 @media screen and (max-width: 300px) {

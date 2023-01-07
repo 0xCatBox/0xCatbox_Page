@@ -305,9 +305,11 @@
   align-items: center;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 40px);
   background-color: black;
   z-index: 0;
+  margin-bottom: 20px;
+  box-shadow: 0 -20px 0 white;
 }
 
 .page3_Textbox {
@@ -367,14 +369,14 @@
     margin-left: 5%;
   }
   .descript1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .descript2 {
     font-size: 2rem;
     line-height: 60px;
   }
   .descript3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .D-AD_M {
     width: 18%;
@@ -562,6 +564,10 @@
   border-style: solid;
   border-color: #FFFFFF;
   word-break: keep-all;
+}
+
+.Award_row:hover {
+  color: black;
 }
 
 .Award_Achievement {
@@ -776,6 +782,12 @@
   font-weight: 900;
 }
 
+.toggleOn::after {
+  content: "|";
+  float: right;
+  color: gray;
+}
+
 .toggleOff {
   width: 2rem;
   color: gray;
@@ -848,18 +860,40 @@
   font-family: "Ethnocentric";
   color: white;
   font-size: 1.3rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .git {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 0 0 0 auto;
   width: 10%;
   color: white;
+}
+
+.git:hover {
+  color: black;
 }
 
 .mail {
+  margin: 0 auto 0 0;
   width: 10%;
   color: white;
 }
 
+.mail:hover {
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .footer_title {
+    font-size: 1rem;
+  }
+}
 html {
   font-size: 20px;
 }

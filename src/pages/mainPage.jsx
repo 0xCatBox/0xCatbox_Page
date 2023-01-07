@@ -14,10 +14,12 @@ const Main = () => {
         <Frame />
         <LanguageButton />
         <Catbox />
-        <CopyText />
-        <D_AD />
-        <Team />
-        <Frame />
+        <div className="scrollmotion">
+          <CopyText />
+          <Frame />
+          <D_AD />
+          <Team />
+        </div>
       </div>
     );
 }
