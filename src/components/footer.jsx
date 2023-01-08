@@ -1,6 +1,6 @@
 import React from 'react';
 import {FiGithub,FiMail} from 'react-icons/fi';
-import Mailto from 'mailto';
+
 const Footer = () => {
     
     return (

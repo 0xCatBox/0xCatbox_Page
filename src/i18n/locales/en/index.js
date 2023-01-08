@@ -1,5 +1,5 @@
 import page from './page.json'
 
-export default{
-    page
-}
+const page_json = {page};
+
+export default page_json;
