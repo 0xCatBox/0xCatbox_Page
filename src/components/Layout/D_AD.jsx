@@ -13,8 +13,8 @@ const D_AD = () => {
           <div className="D-AD_description">
             <div className="descript1" style={i18n.language === 'EN' ? {fontFamily: "Ethnocentric"} : {fontFamily: "manrope SemiBold"}}>{t("Web3 starts at 0xCatbox")}</div>
             <div className="descript2">D-AD</div>
-            <div className="descript3" style={i18n.language === 'EN' ? {fontFamily: "Ethnocentric"} : {fontFamily: "manrope ExtraBold", fontWeight: 800, display: "inline-block"}}>{t("Web3 advertising protocol")}</div>
-            <div className="descript3" style={i18n.language === 'EN' ? {fontFamily: "Ethnocentric"} : {fontFamily: "manrope ExtraBold", fontWeight: 800, display: "inline-block"}}>{t("with no data movement")}</div>
+            <div className="descript3" style={i18n.language === 'EN' ? {fontFamily: "Ethnocentric"} : {fontFamily: "manrope ExtraBold", fontWeight: 800, display: "inline-block"}}>{t("Web3 Advertising Protocol")}</div>
+            <div className="descript3" style={i18n.language === 'EN' ? {fontFamily: "Ethnocentric"} : {fontFamily: "manrope ExtraBold", fontWeight: 800, display: "inline-block"}}>{t("without Data Collection")}</div>
           </div>
         </div>
         <div className="D-AD_M">
