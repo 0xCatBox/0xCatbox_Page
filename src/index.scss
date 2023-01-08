@@ -1,8 +1,9 @@
-@import './styles/components/mainCatbox.scss';
-@import './styles/components/frame.scss';
-@import './styles/components/copytext.scss';
-@import './styles/components/D_AD.scss';
-@import './styles/components/teamintro.scss';
+@import './styles/components/Layout/mainCatbox.scss';
+@import './styles/components/Layout/frame.scss';
+@import './styles/components/Layout/copytext.scss';
+@import './styles/components/Layout/D_AD.scss';
+@import './styles/components/Layout/teamAward.scss';
+@import './styles/components/Layout/teamVision.scss';
 @import './styles/components/LanguageButton.scss';
 @import './styles/components/footer.scss';
 @import './styles/pages/mainPage.scss';
@@ -18,7 +19,7 @@ body {
 }
 
 @font-face {
-    font-family: "ethnocentric";
+    font-family: "Ethnocentric";
     src: url("./assets/font/ethnocentric\ rg.otf");
 }
 
@@ -30,5 +31,27 @@ body {
 @font-face {
     font-family: "raleway";
     src: url("./assets/font/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "manrope medium";
+    src: url("./assets/font/Manrope-Medium.ttf");
+}
+
+@font-face {
+    font-family: "manrope Regular";
+    src: url("./assets/font/Manrope-Regular.ttf");
+}
+@font-face {
+    font-family: "manrope SemiBold";
+    src: url("./assets/font/Manrope-SemiBold.ttf");
+}
+@font-face {
+    font-family: "manrope Bold";
+    src: url("./assets/font/Manrope-Bold.ttf");
+}
+@font-face {
+    font-family: "manrope ExtraBold";
+    src: url("./assets/font/Manrope-ExtraBold.ttf");
 }
 

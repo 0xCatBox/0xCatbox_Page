@@ -1,5 +1,5 @@
 import page from './page.json'
 
-export default{
+export default {
     page
 }

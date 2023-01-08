@@ -4,10 +4,10 @@ import { GrLanguage } from "../assets/Icons/GrLanguageIcon";
 import { motion } from "framer-motion";
 
 function LanguageButton(props){
-    const [alignment, setAlignment] = React.useState("en");
+    const [alignment, setAlignment] = React.useState("EN");
     const handleChange = async () => {
-      if (alignment === "en") await setAlignment("ko");
-      else await setAlignment("en");
+      if (alignment === "EN") await setAlignment("KR");
+      else await setAlignment("EN");
     
     };
 
@@ -25,15 +25,15 @@ function LanguageButton(props){
       >
         <GrLanguage className="LangIcon" />
         <button className="button" onClick={handleChange}>
-          {alignment == "ko" ? (
+          {alignment === "KR" ? (
             <div className='button'>
-                <div className="toggleOn">ko</div>
-                <div className="toggleOff">en</div>
+                <div className="toggleOn">KR</div>
+                <div className="toggleOff">EN</div>
             </div>
           ) : (
             <div className='button'>
-                <div className="toggleOn">en</div>
-                    <div className="toggleOff">ko</div>
+                <div className="toggleOn">EN</div>
+                    <div className="toggleOff">KR</div>
             </div>
           )}
         </button>

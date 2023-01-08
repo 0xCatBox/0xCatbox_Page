@@ -1,41 +1,48 @@
 .page4_layout {
     background: #82887C;
-    height: auto;
+    overflow: visible;
+    height: calc(100vh - 20px);
     position: relative;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    box-shadow: 0 -20px 0 white;
     z-index: 0;
+    margin-bottom: 20px;
 }
 
 .Award_Section {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    width: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    clip-path: inset(0 0 0 0);
 }
 
 .Award {
-    position: relative;
-    z-index: 0;
+    display: flex;
+    position: fixed;
+    left: 10%;
+    top: calc(10vh + 20px);
     height: 65px;
     font-family: 'Ethnocentric';
     font-size: 1.8rem;
-    display: flex;
     align-items: center;
     justify-content: flex-start;
     color: #F4E45B;
+    background-attachment: fixed;
 }
 
 .Award_table_title {
     display: flex;
-    position: relative;
+    position: fixed;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    top: calc(15vh + 20px);
+    left: 10%;
+    width: 80%;
     height: 40px;
     margin-top: 5%;
+    background-attachment: fixed;
 
     font-family: 'Raleway';
     font-size: 1.2rem;
@@ -64,10 +71,13 @@
 }
 
 .Award_table {
-    position: relative;
-    width: 100%;
+    position: fixed;
+    width: 80%;
     flex-direction: column;
     color: #FFFFFF;
+    background-attachment: fixed;
+    left: 10%;
+    top: 31%;
 }
 
 .Award_row {
@@ -78,12 +88,13 @@
     align-items: center;
     margin-left: 15%;
     height: auto;
-    min-height: 60px;
+    min-height: 70px;
     font-weight: 400;
     border-width: 0px 0px 0.9px 0px;
     border-style: solid;
     border-color: #FFFFFF;
     word-break: keep-all;
+    
 }
 
 .Award_row:hover {
@@ -96,6 +107,7 @@
     margin-bottom: 20px;
     line-height: 20px;
     font-size: 0.9rem;
+
 }
 
 .Award_Project {
@@ -108,60 +120,36 @@
     font-size: 1rem;
 }
 
-.Team_Vision_Section {
-    padding: 10%;
-    width: 80%;
-}
-
-.Team_vision {
-    position: relative;
-    display: flex;
-    width: 100%;
-    font-family: 'Ethnocentric';
-    font-size: 1.8rem;
-    align-items: center;
-    color: #F4E45B;
-}
-
-
-.vision {
-    position: relative;
-    font-family: 'Raleway';
-    flex-direction: column;
-    width: 80%;
-    margin-top: 5%;
-    margin-left: 15%;
-    font-size: 1rem;
-    color: #FFFFFF;
-}
-
-.vision_text {
-    height: auto;
-    margin-bottom: 5%;
-    word-break: keep-all;
-}
-
 .line {
     display: block;
-    position: relative;
-    width: 100%;
+    position: fixed;
+    width: 80%;
     border-width: 2px 0px 0px 0px;
     border-style: solid;
     border-color: #FFFFFF;
+    background-attachment: fixed;
+    top: 78%;
+    left: 10%;
 }
 
-//*모바일 세로
+@media screen and (max-width: 1200px) {
+    .Award_table {
+        top: 29%;
+    }
+    .line {
+        top: 83%;
+    }
+}
 @media screen and (max-width: 900px) {
     .Award {
         font-size: 1.4rem;
     }
 
-    .Team_vision {
-        font-size: 1.4rem;
-    }
-
     .Award_table_title {
         font-size: 1rem;
+    }
+    .Award_table{
+        top:28%;
     }
 
     .Award_row {
@@ -197,11 +185,10 @@
         width: 15%;
         text-align: right;
     }
-
-    .vision {
-        margin-left: 10%;
-        font-size: 0.9rem;
+    .line {
+        top:81%;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -213,14 +200,14 @@
         font-size: 1rem;
     }
 
-    .Team_vision {
-        font-size: 1rem;
-    }
-
     .Award_table_title {
         font-size: 0.8rem;
         height: 30px;
         border-width: 1.5px 0px;
+    }
+
+    .Award_table{
+        top:25%;
     }
 
     .Award_row{
@@ -259,15 +246,10 @@
         font-size: 0.7rem;
     }
 
-    .vision {
-        margin-left: 0;
-        width: 100%;
-        font-size: 0.8rem;
-        margin-top: 10%;
-    }
 
     .line {
         border-width: 1.5px 0px 0px 0px;
+        top:75%;
     }
 }
 
@@ -276,8 +258,9 @@
     .Award {
         font-size: 0.8rem;
     }
-    .Team_vision {
-        font-size: 0.8rem;
+
+    .Award_table{
+        top:23%;
     }
 
     .Award_table_title {
@@ -297,8 +280,8 @@
         font-size: 0.55rem;
     }
 
-    .vision {
-        font-size: 0.7rem;
+    .line {
+        top: 68%;
     }
 
 }

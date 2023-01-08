@@ -1,0 +1,252 @@
+.page4_layout {
+  background: #82887C;
+  overflow: visible;
+  height: calc(100vh - 20px);
+  position: relative;
+  box-shadow: 0 -20px 0 white;
+  z-index: 0;
+  margin-bottom: 20px;
+}
+
+.Award_Section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  clip-path: inset(0 0 0 0);
+}
+
+.Award {
+  display: flex;
+  position: fixed;
+  left: 10%;
+  top: calc(10vh + 20px);
+  height: 65px;
+  font-family: "Ethnocentric";
+  font-size: 1.8rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: #F4E45B;
+  background-attachment: fixed;
+}
+
+.Award_table_title {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: calc(15vh + 20px);
+  left: 10%;
+  width: 80%;
+  height: 40px;
+  margin-top: 5%;
+  background-attachment: fixed;
+  font-family: "Raleway";
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+
+.Achievement {
+  position: relative;
+  width: 49%;
+  margin-left: 15%;
+}
+
+.Project {
+  position: relative;
+  width: 25%;
+}
+
+.Date {
+  position: relative;
+  width: 25%;
+}
+
+.Award_table {
+  position: fixed;
+  width: 80%;
+  flex-direction: column;
+  color: #FFFFFF;
+  background-attachment: fixed;
+  left: 10%;
+  top: 31%;
+}
+
+.Award_row {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15%;
+  height: auto;
+  min-height: 70px;
+  font-weight: 400;
+  border-width: 0px 0px 0.9px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  word-break: keep-all;
+}
+
+.Award_row:hover {
+  color: black;
+}
+
+.Award_Achievement {
+  width: 49%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-size: 0.9rem;
+}
+
+.Award_Project {
+  width: 25%;
+  font-size: 1rem;
+}
+
+.Award_Date {
+  width: 25%;
+  font-size: 1rem;
+}
+
+.line {
+  display: block;
+  position: fixed;
+  width: 80%;
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  background-attachment: fixed;
+  top: 78%;
+  left: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  .Award_table {
+    top: 29%;
+  }
+  .line {
+    top: 83%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Award {
+    font-size: 1.4rem;
+  }
+  .Award_table_title {
+    font-size: 1rem;
+  }
+  .Award_table {
+    top: 28%;
+  }
+  .Award_row {
+    margin-left: 10%;
+  }
+  .Achievement {
+    margin-left: 10%;
+    width: 59%;
+  }
+  .Award_Achievement {
+    font-size: 0.8rem;
+    width: 59%;
+  }
+  .Project {
+    width: 25%;
+  }
+  .Award_Project {
+    width: 25%;
+    font-size: 0.8rem;
+  }
+  .Date {
+    width: 15%;
+    text-align: right;
+  }
+  .Award_Date {
+    font-size: 0.8rem;
+    width: 15%;
+    text-align: right;
+  }
+  .line {
+    top: 81%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page4_layout {
+    min-height: 100vh;
+  }
+  .Award {
+    font-size: 1rem;
+  }
+  .Award_table_title {
+    font-size: 0.8rem;
+    height: 30px;
+    border-width: 1.5px 0px;
+  }
+  .Award_table {
+    top: 25%;
+  }
+  .Award_row {
+    margin-left: 0;
+  }
+  .Achievement {
+    margin-left: 0;
+    width: 59%;
+  }
+  .Award_Achievement {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 59%;
+    font-size: 0.7rem;
+  }
+  .Project {
+    width: 25%;
+  }
+  .Award_Project {
+    width: 25%;
+    font-size: 0.7rem;
+  }
+  .Date {
+    width: 15%;
+    text-align: right;
+  }
+  .Award_Date {
+    width: 15%;
+    text-align: right;
+    font-size: 0.7rem;
+  }
+  .line {
+    border-width: 1.5px 0px 0px 0px;
+    top: 75%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Award {
+    font-size: 0.8rem;
+  }
+  .Award_table {
+    top: 23%;
+  }
+  .Award_table_title {
+    font-size: 0.65rem;
+    height: 25px;
+  }
+  .Award_Achievement {
+    font-size: 0.55rem;
+  }
+  .Award_Project {
+    font-size: 0.55rem;
+  }
+  .Award_Date {
+    font-size: 0.55rem;
+  }
+  .line {
+    top: 68%;
+  }
+}/*# sourceMappingURL=teamAward.css.map */

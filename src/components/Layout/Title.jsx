@@ -10,10 +10,11 @@ const Catbox = () => {
     <div className="start">
       <motion.div
         initial={{ scale: 0.01 }}
-        animate={{ scale: 2, scaleX: 1, scaleY: 1.5 }}
+        animate={{ scale: 1.5, scaleX: 1, scaleY: 1.5 }}
         transition={{
-          duration: 2,
-          ease: "easeIn",
+          delay: 0.1,
+          duration: 4,
+          ease: "backOut",
         }}
       >
         <div className="blackbox"></div>
@@ -66,17 +67,17 @@ const Catbox = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.path
-            initial={{ pathLength: 0.2 }}
-            animate={{ pathLength: 1,opacity:[0,1] }}
+            animate={{ pathLength: [0,0.2,1,0], y:[0,0,100,100]}}
             transition={{
+              times: [0,0.1,0.9,1],
               delay: 3.5,
-              duration: 1,
-              ease: "easeOut",
+              duration: 1.5,
+              ease: "easeInOut",
               repeat: Infinity,
               repeatType: "loop",
-              repeatDelay: 0.3,
+              repeatDelay: 0,
             }}
-            strokeWidth={1}
+            strokeWidth={1.5}
             strokeDasharray="0 1"
             fill="none"
             stroke="white"

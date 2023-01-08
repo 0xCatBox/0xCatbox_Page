@@ -1,0 +1,61 @@
+.Team_Vision_Section {
+  padding: 10%;
+  width: 80%;
+}
+
+.Team_vision {
+  position: relative;
+  display: flex;
+  width: 100%;
+  font-family: "Ethnocentric";
+  font-size: 1.8rem;
+  align-items: center;
+  height: auto;
+  color: #F4E45B;
+}
+
+.vision {
+  position: relative;
+  font-family: "Raleway";
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 15%;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.vision_text {
+  height: auto;
+  margin-bottom: 5%;
+  word-break: keep-all;
+}
+
+@media screen and (max-width: 900px) {
+  .Team_vision {
+    font-size: 1.4rem;
+  }
+  .vision {
+    margin-left: 10%;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Team_vision {
+    font-size: 1rem;
+  }
+  .vision {
+    margin-left: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Team_vision {
+    font-size: 0.8rem;
+  }
+  .vision {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=teamVision.css.map */

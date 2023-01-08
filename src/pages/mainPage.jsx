@@ -4,9 +4,10 @@ import Catbox from "../components/Layout/Title";
 import Frame from "../components/Layout/frame";
 import CopyText from "../components/Layout/copytext";
 import D_AD from "../components/Layout/D_AD";
-import Team from "../components/Layout/teamintro"
+import TeamAward from "../components/Layout/teamAward";
+import TeamVision from "../components/Layout/teamVison";
 import LanguageButton from "../components/LanguageButton";
-
+import Footer from "../components/footer";
 const Main = () => {
 
     return (
@@ -16,10 +17,12 @@ const Main = () => {
         <Catbox />
         <div className="scrollmotion">
           <CopyText />
-          <Frame />
           <D_AD />
-          <Team />
+          <TeamAward />
+          <TeamVision/>
+          <Frame />
         </div>
+        <Footer/>
       </div>
     );
 }

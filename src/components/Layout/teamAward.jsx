@@ -1,7 +1,6 @@
 import React from "react";
-import Footer from "../footer";
 
-const Team = () => {
+const TeamAward = () => {
   return (
     <div className="page4_layout">
       <div className="Award_Section">
@@ -15,7 +14,7 @@ const Team = () => {
           <div className="Award_row" onClick={() => window.open("https://devpost.com/software/mushroom-w956d8")}>
             <div className="Award_Achievement">TRON Grand Hackathon : Season 3 - GameFi: 5th, TRON DAO Forum: GameFi Prizes 4th</div>
             <div className="Award_Project">Mushroom</div>
-            <div className="Award_Date">2022.11</div>
+            <div className="Award_Date">2022.12</div>
           </div>
           <div className="Award_row" onClick={() => window.open("https://medium.com/encode-club/evmos-covalent-onemillionwallets-hackathon-prizewinners-and-summary-22fca2302c37")}>
           <div className="Award_Achievement">Evmos-Covalent #OneMillionWallets Hackathon - NFT,GameFi Top Prize 1st</div>
@@ -37,22 +36,11 @@ const Team = () => {
             <div className="Award_Project">PSP34 NFT minting</div>
             <div className="Award_Date">2022.7</div>
           </div>
-        </div>
-        
+        </div>    
         <div className="line"/>
       </div>
-      <div className="Team_Vision_Section">
-        <div className="Team_vision">Team Vision</div>
-        <div className="vision">
-            <div className="vision_text">Today, there is no such thing as private web data.</div>
-            <div className="vision_text">Private data is stored centrally, so we have lost the sovereignty of our personal data. This leads to serious social problems such as leakage of private data. </div>
-            <div className="vision_text">For this reason, we have to think about how our data is collected and used. We do not need to provide data to service providers. It should also enable the service to run with a transparent algorithm from the service provider.</div>
-            <div className="vision_text">0xCatbox is aiming for web3 where the sovereignty of private data resides. So, we devised a way to utilize user's private data without storing it. This technology improves security while protecting the integrity of data. individuals can have sovereignty of private data on web3.</div>
-        </div >
-      </div>
-      <Footer/>
     </div>
   );
 };
 
-export default Team;
+export default TeamAward;
