@@ -53,3 +53,16 @@
         font-size: 1rem;
     } 
 }
+@media screen and (max-width: 440px) {
+    .footer_title{
+        font-size: 0.8rem;
+    }
+
+    .git {
+        margin-right: 20px;
+    }
+
+    .mail {
+        margin-left: 20px;
+    }
+}
