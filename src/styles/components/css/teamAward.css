@@ -36,7 +36,7 @@
   font-family: "Ethnocentric";
   font-size: 1.8rem;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   color: #F4E45B;
 }
 

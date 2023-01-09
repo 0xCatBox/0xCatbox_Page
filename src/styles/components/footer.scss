@@ -27,7 +27,7 @@
 .git {
     display: flex;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: flex-start;
     margin: 0 0 0 auto;
     width: 10%;
     color: white;
@@ -58,7 +58,6 @@
     .footer{
         bottom: 10px;
         height: 6vh;
-        
     }
 
     .footer_title{
