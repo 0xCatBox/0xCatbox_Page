@@ -74,9 +74,14 @@
 }
 
 @media screen and (max-width: 600px) {
+    .page2 {
+        margin-bottom: 10px;
+        box-shadow: 0 -10px 0 white;
+    }
     .Textbox {
         font-size: 1.3rem;
     }
+    
 }
 @media screen and (max-width: 500px) {
     .Textbox {

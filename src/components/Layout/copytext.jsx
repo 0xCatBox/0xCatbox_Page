@@ -42,7 +42,6 @@ const CopyText = () => {
             transition={{
               delay: 0.4,
               duration: 2,
-              repeatType: "loop"
             }}
             className="Copytextbox3"
           >
