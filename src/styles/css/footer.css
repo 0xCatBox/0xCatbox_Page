@@ -51,7 +51,11 @@
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 600px) {
+  .footer {
+    bottom: 10px;
+    height: 6vh;
+  }
   .footer_title {
     font-size: 0.8rem;
   }
