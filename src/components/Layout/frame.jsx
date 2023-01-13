@@ -1,7 +1,7 @@
 import React from "react";
 
 const Frame = () => {
-    return <div>
+    return <div className="frame">
         <div className="frametopbox"/>
         <div className="frameleftbox"/>
         <div className="framerightbox"/>

@@ -20,7 +20,6 @@ const Main = () => {
           <D_AD />
           <TeamAward />
           <TeamVision/>
-          <Frame />
         </div>
         <Footer/>
       </div>
