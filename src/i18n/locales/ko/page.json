@@ -9,5 +9,10 @@
     "to the world":"힘이다",
     "Web3 starts at 0xCatbox":"Web3는 0xCatbox에서 시작됩니다",
     "Web3 Advertising Protocol":" 개인정보 수집이 없는",
-    "without Data Collection":"Web3 광고 프로토콜"
+    "without Data Collection":"Web3 광고 프로토콜",
+    "Today, there is no such thing as private web data.": "오늘날, 개인 웹 데이터라는 것은 없습니다.",
+    "Private data is stored centrally in database, so we have lost the sovereignty of our personal data. This leads to serious social problems such as leakage of private data.": "개인 데이터는 중앙 집중식으로 저장되므로 우리는 개인 데이터 주권을 상실했습니다. 이는 개인정보 유출 문제와 같은 심각한 사회문제로 이어집니다.",
+    "For this reason, we have to think about how our data is collected and used.  We do not need to provide data to service providers. It should also enable the service to run with a transparent algorithm from the service provider.":"이러한 이유로 우리는 우리의 데이터가 어떻게 수집되고 사용되는지 알아야합니다. 우리는 서비스 제공업체에게 개인 데이터를 제공할 필요가 없습니다. 또한 서비스 제공업체는 투명한 알고리즘으로 서비스를 제공할 수 있어야 합니다.",
+    "0xCatbox pursues web3 with personal data sovereignty. So we came up with a way to utilize personal data without collecting it This technology improves security while protecting the integrity of data. So, We can have sovereignty over personal web data.":"0xCatbox는 개인 데이터의 주권을 가지는 web3추구합니다. 그래서 우리는 개인 데이터를 수집하지않고 활용할 수 있는 방법을 고안했습니다. 이 기술은 데이터 무결성을 보호하는 동시에 보안을 향상 시킵니다. 그렇게 우리는 개인 웹데이터에 대한 주권을 가질 수 있습니다."
+
 }
