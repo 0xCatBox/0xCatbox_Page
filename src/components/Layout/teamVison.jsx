@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const TeamVision = () => {
-  const { t,i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="page4_layout">
       <div className="Team_Vision_Section">
