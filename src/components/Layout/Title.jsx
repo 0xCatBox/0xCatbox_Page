@@ -43,7 +43,7 @@ const Catbox = () => {
             ease: "backInOut",
           }}
         >
-          {t('Make trusted')}
+          {t('Realize personal data soverignty')}
         </motion.div>
       </div>
       <div className="descriptionbox2">
@@ -57,7 +57,7 @@ const Catbox = () => {
             ease: "backInOut",
           }}
         >
-          {t('Internet for web3')}
+          {t('This is true meaning of web3')}
         </motion.div>
       </div>
       <div className="arrow">
