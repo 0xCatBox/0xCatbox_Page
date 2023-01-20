@@ -13,7 +13,7 @@ const Catbox = () => {
         animate={{ scale: 1.5, scaleX: 1, scaleY: 1.5 }}
         transition={{
           delay: 0.1,
-          duration: 4,
+          duration: 10,
           ease: "backOut",
         }}
       >
@@ -29,7 +29,7 @@ const Catbox = () => {
             ease: "backInOut",
           }}
         >
-          0xCatbox
+          0xCatbox 
         </motion.div>
       </div>
       <div className="descriptionbox1">
