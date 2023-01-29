@@ -1,0 +1,173 @@
+.start {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.blackbox {
+  width: 100vw;
+  height: 150vh;
+  background-color: black;
+  border-radius: 50%;
+  z-index: -4;
+}
+
+.titlebox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: 35%;
+}
+
+.title {
+  font-family: "ethnocentric";
+  font-size: 4rem;
+  color: white;
+}
+
+.descriptionbox1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 90%;
+  bottom: 40%;
+  height: auto;
+}
+
+.descriptionbox2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 90%;
+  bottom: 35%;
+  height: auto;
+}
+
+.description {
+  font-family: "ethnocentric";
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+  z-index: 100;
+  height: 50px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 3.3rem;
+  }
+  .descriptionbox1 {
+    bottom: 45%;
+  }
+  .descriptionbox2 {
+    bottom: 40%;
+  }
+  .description {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .descriptionbox1 {
+    bottom: 45%;
+  }
+  .descriptionbox2 {
+    bottom: 35%;
+  }
+  .description {
+    width: 80%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    width: 80%;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .descriptionbox1 {
+    bottom: 47%;
+  }
+  .descriptionbox2 {
+    bottom: 44%;
+  }
+  .description {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .descriptionbox1 {
+    bottom: 45%;
+  }
+  .descriptionbox2 {
+    bottom: 40%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .title {
+    top: 40%;
+    font-size: 1.1rem;
+  }
+  .descriptionbox1 {
+    bottom: 44%;
+  }
+  .descriptionbox2 {
+    bottom: 40%;
+  }
+  .description {
+    width: 80%;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-height: 400px) {
+  .titlebox {
+    top: 30%;
+    font-size: 2rem;
+  }
+  .descriptionbox1 {
+    bottom: 35%;
+  }
+  .descriptionbox2 {
+    bottom: 28%;
+  }
+  .description {
+    bottom: 20%;
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=mainCatbox.css.map */

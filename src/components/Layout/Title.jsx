@@ -13,7 +13,7 @@ const Catbox = () => {
         animate={{ scale: 1.5, scaleX: 1, scaleY: 1.5 }}
         transition={{
           delay: 0.1,
-          duration: 10,
+          duration: 2,
           ease: "backOut",
         }}
       >
@@ -25,7 +25,7 @@ const Catbox = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 4,
+            duration: 3,
             ease: "backInOut",
           }}
         >
@@ -52,7 +52,7 @@ const Catbox = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.5,
+            delay: 1,
             duration: 4,
             ease: "backInOut",
           }}

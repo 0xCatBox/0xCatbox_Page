@@ -1,0 +1,101 @@
+.Langbutton {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  right: 50px;
+  top: 5%;
+  color: white;
+  width: 50px;
+}
+.Langbutton .LangIcon {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+}
+
+.Langbutton:hover {
+  width: 100px;
+}
+.Langbutton:hover .button {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+}
+
+.button {
+  display: none;
+}
+
+.toggleOn {
+  width: 2rem;
+  font-weight: 900;
+}
+
+.toggleOn::after {
+  content: "|";
+  float: right;
+  color: gray;
+}
+
+.toggleOff {
+  width: 2rem;
+  color: gray;
+}
+
+@media screen and (max-width: 900px) {
+  .Langbutton:hover .button {
+    font-size: 0.8rem;
+  }
+  .toggleOff {
+    width: 1.7rem;
+  }
+  .toggleOn {
+    width: 1.7rem;
+  }
+  .Langbutton {
+    width: 30px;
+    right: 50px;
+  }
+  .Langbutton .LangIcon {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Langbutton:hover .button {
+    font-size: 0.6rem;
+  }
+  .toggleOff {
+    width: 1.5rem;
+  }
+  .toggleOn {
+    width: 1.5rem;
+  }
+  .Langbutton {
+    right: 30px;
+    top: 3%;
+  }
+  .Langbutton .LangIcon {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Langbutton:hover .button {
+    font-size: 0.7rem;
+  }
+  .toggleOff {
+    width: 1.3rem;
+  }
+  .toggleOn {
+    width: 1.3rem;
+  }
+  .Langbutton {
+    top: 3%;
+    right: 25px;
+  }
+  .Langbutton .LangIcon {
+    width: 85%;
+  }
+}/*# sourceMappingURL=LanguageButton.css.map */

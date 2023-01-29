@@ -1,17 +1,18 @@
-import React from 'react'
+
 import i18n from "i18next";
 import { GrLanguage } from "../assets/Icons/GrLanguageIcon";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 function LanguageButton(props){
-    const [alignment, setAlignment] = React.useState("EN");
+    const [alignment, setAlignment] = useState("EN");
     const handleChange = async () => {
       if (alignment === "EN") await setAlignment("KR");
       else await setAlignment("EN");
     
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         i18n.changeLanguage(alignment);
     },[alignment])
 
