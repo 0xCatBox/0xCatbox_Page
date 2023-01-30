@@ -25,7 +25,7 @@ const Catbox = () => {
           initial={{ opacity: 0, y: 400,rotate:30 }}
           animate={{ opacity: 1, y: 0,rotate:0 }}
           transition={{
-            duration: 2,
+            duration: 3,
             ease: "circOut"
           }}
         >
@@ -52,7 +52,7 @@ const Catbox = () => {
           initial={{ opacity: 0, y: 500, rotate:30 }}
           animate={{ opacity: 1, y: 0 ,rotate:0}}
           transition={{
-            delay: 1,
+            delay: 0.5,
             duration: 4,
             ease: "circOut"
           }}
