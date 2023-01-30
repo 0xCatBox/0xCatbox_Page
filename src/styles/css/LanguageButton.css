@@ -9,12 +9,11 @@
   width: 50px;
 }
 .Langbutton .LangIcon {
-  fill: #FFFFFF;
-  stroke: #FFFFFF;
+  width: 20px;
 }
 
 .Langbutton:hover {
-  width: 100px;
+  width: auto;
 }
 .Langbutton:hover .button {
   display: flex;
@@ -82,6 +81,9 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .Langbutton:hover {
+    width: 80px;
+  }
   .Langbutton:hover .button {
     font-size: 0.7rem;
   }
@@ -93,9 +95,7 @@
   }
   .Langbutton {
     top: 3%;
-    right: 25px;
-  }
-  .Langbutton .LangIcon {
-    width: 85%;
+    right: 20px;
+    width: 20px;
   }
 }/*# sourceMappingURL=LanguageButton.css.map */

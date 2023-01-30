@@ -10,10 +10,10 @@ const Catbox = () => {
     <div className="start">
       <motion.div
         initial={{ scale: 0.01 }}
-        animate={{ scale: 1.5, scaleX: 1, scaleY: 1.5 }}
+        animate={{ scale: 1.5, scaleX: 1, scaleY: 1.5,rotate:0 }}
         transition={{
           delay: 0.1,
-          duration: 2,
+          duration: 3,
           ease: "backOut",
         }}
       >
@@ -22,11 +22,11 @@ const Catbox = () => {
       <div className="titlebox">
         <motion.div
           className="title"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 400,rotate:30 }}
+          animate={{ opacity: 1, y: 0,rotate:0 }}
           transition={{
-            duration: 3,
-            ease: "backInOut",
+            duration: 2,
+            ease: "circOut"
           }}
         >
           0xCatbox 
@@ -35,12 +35,12 @@ const Catbox = () => {
       <div className="descriptionbox1">
         <motion.div
           className="description"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 500, rotate:30 }}
+          animate={{ opacity: 1, y: 0 , rotate:0}}
           transition={{
             delay: 0.25,
-            duration: 4,
-            ease: "backInOut",
+            duration: 3,
+            ease: "circOut"
           }}
         >
           {t('Realize personal data soverignty')}
@@ -49,12 +49,12 @@ const Catbox = () => {
       <div className="descriptionbox2">
         <motion.div
           className="description"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 500, rotate:30 }}
+          animate={{ opacity: 1, y: 0 ,rotate:0}}
           transition={{
             delay: 1,
             duration: 4,
-            ease: "backInOut",
+            ease: "circOut"
           }}
         >
           {t('This is true meaning of web3')}

@@ -8,14 +8,12 @@
     color:white;
     width: 50px;
     .LangIcon {
-        fill:#FFFFFF;
-        stroke: #FFFFFF;
+        width: 20px;
     }
-
-
 }
+
 .Langbutton:hover {
-    width: 100px;
+    width: auto;
     .button {
         display: flex;
         flex-direction: row;
@@ -24,11 +22,11 @@
         color: #FFFFFF;
         font-size: 0.8rem;
     }
+    
 }
 
 .button  {
     display: none;
-    
 }
 
 .toggleOn {
@@ -97,6 +95,8 @@
         .button {
             font-size: 0.7rem;
         }
+        width: 80px;
+        
     }
 
     .toggleOff {
@@ -107,10 +107,8 @@
     }
     .Langbutton {
         top:3%;
-        right:25px;
-        .LangIcon {
-            width: 85%;
-        }
+        right:20px;
+        width: 20px;
     }
 }
 

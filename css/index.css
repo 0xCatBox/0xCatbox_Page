@@ -888,6 +888,7 @@
 .Langbutton .LangIcon {
   fill: #FFFFFF;
   stroke: #FFFFFF;
+  width: 50px;
 }
 
 .Langbutton:hover {
