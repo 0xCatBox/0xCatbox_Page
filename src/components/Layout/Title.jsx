@@ -43,7 +43,7 @@ const Catbox = () => {
             ease: "circOut"
           }}
         >
-          {t('Realize personal data sovereigenty')}
+          {t('Realize personal data sovereignty')}
         </motion.div>
       </div>
       <div className="descriptionbox2">
