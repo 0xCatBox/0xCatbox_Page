@@ -8,6 +8,7 @@ import TeamAward from "../components/Layout/teamAward";
 import TeamVision from "../components/Layout/teamVison";
 import LanguageButton from "../components/LanguageButton";
 import Footer from "../components/footer";
+import Mushfarm from "../components/Layout/Mushfarm";
 const Main = () => {
 
     return (
@@ -18,6 +19,7 @@ const Main = () => {
         <div className="scrollmotion">
           <CopyText />
           <D_AD />
+          <Mushfarm/>
           <TeamAward />
           <TeamVision/>
         </div>

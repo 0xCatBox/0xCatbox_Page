@@ -1,0 +1,384 @@
+.Mush_background {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 -20px 0 white;
+    height: 100vh;
+    z-index: 5;
+    color: white;
+    
+    .page3_layout {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        clip-path: inset(0 0 0 0);
+        .acc1{
+            display: flex;
+            position: absolute;
+            top:30vh;
+            left: 10px;
+            z-index: 5;
+            transform: rotate(90deg);
+            width: 80px;
+        }
+        .acc1-1{
+            display: flex;
+            position: absolute;
+            bottom:20vh;
+            right: 10px;
+            z-index: 5;
+            transform: rotate(270deg);
+            width: 80px;
+        }
+        .acc2{
+            display: flex;
+            position: fixed;
+            top:10vh;
+            left: 10vw;
+            z-index: 10;
+            background-attachment: fixed;
+            width: 180px;
+        }
+        .acc2-1{
+            display: flex;
+            position: fixed;
+            top:20vh;
+            right: 30vw;
+            z-index: 10;
+            background-attachment: fixed;
+            width: 250px;
+        }
+        .acc2-2{
+            display: flex;
+            position: fixed;
+            top:7vh;
+            right: 10vw;
+            z-index: 10;
+            background-attachment: fixed;
+            width: 160px;
+        }
+        .acc3{
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 15;
+            background-attachment: fixed;
+            width: 100%;
+        }
+        .RedMushroom{
+            position: absolute;
+            bottom: 3vh;
+            right: 10vw;
+            z-index: 15;
+            width: 170px;
+        }
+
+        .Mushback {
+            position: fixed;
+            width: 100vw;
+            height: 100%;
+            background-color: black;
+            backface-visibility: hidden;
+            left: 20px;
+            bottom: 20px;
+            background-attachment: fixed;
+            background-image: url("../../../assets/image/Mush_info.png");
+            background-size: cover;
+            
+        }
+        
+        .Mush_Textbox {
+            display: flex;
+            position: fixed;
+            background-attachment: fixed;
+            left: calc(10vw + 20px);
+            height: calc(100vh - 20px);
+            top:0;
+            align-items: center;
+            width: 85%;
+            justify-content: flex-start;
+            z-index: 12;
+            .Mush_description {
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                
+                .descript1 {
+                    font-family: 'Ethnocentric';
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 40px;
+                    letter-spacing: 0.01em;
+                    color: gray;
+                }
+                
+                .descript2 {
+                    font-family: 'Ethnocentric';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2.5rem;
+                    line-height: 60px;
+                    color: #F4E45B;
+                    margin-bottom: 2vh;
+                    
+                }
+                .descript3 {
+                    font-family: 'Ethnocentric';
+                    font-style: normal;
+                    font-weight: 400;
+                    width: auto;
+                    font-size: 0.9rem;
+                    color: #FFFFFF;
+                    white-space:break-spaces;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Mush_background{
+        .page3_layout{
+            .acc1{
+                width: 90px;
+            }
+            .acc1-1 {
+                width: 90px;
+            }
+            .acc2 {
+                width: 160px;
+            }
+            .acc2-1 {
+                width: 230px;
+            }
+            .acc2-2 {
+                width: 150px;
+            }
+            .RedMushroom {
+                width: 150px;
+                bottom: 0;
+            }
+            .Mushback{
+                left: 10px;
+                bottom: 10px;
+            }
+            .Mush_Textbox {
+                left: 10vw;
+                .Mush_description {
+                    .descript1 {
+                        width: 100%;
+                        line-height: 10px;
+                        font-size: 1rem;
+                    }
+                    .descript2 {
+                        font-size: 2rem;
+                        line-height: 50px;
+                    }
+                    .descript3 {
+                        font-size: 0.8rem;
+                        overflow-wrap: break-word;
+                    }
+                }
+            }
+        }
+
+        }
+}
+
+@media screen and (max-width: 900px) {
+    .Mush_background{
+        .page3_layout{
+            .acc1{
+                width: 60px;
+            }
+            .acc1-1 {
+                width: 60px;
+            }
+            .acc2 {
+                width: 140px;
+            }
+            .acc2-1 {
+                width: 180px;
+            }
+            .acc2-2 {
+                width: 100px;
+            }
+            .RedMushroom {
+                width: 130px;
+                bottom: 0;
+            }
+            .Mushback{
+                left: 10px;
+                bottom: 10px;
+            }
+            .Mush_Textbox {
+                left: 10vw;
+                .Mush_description {
+                    .descript1 {
+                        width: 80%;
+                        line-height: 10px;
+                        font-size: 0.8rem;
+                    }
+                    .descript2 {
+                        font-size: 1.5rem;
+                        line-height: 50px;
+                    }
+                    .descript3 {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Mush_background{
+        .page3_layout{
+            .acc1{
+                width: 50px;
+            }
+            .acc1-1 {
+                width: 50px;
+            }
+            .acc2 {
+                width: 130px;
+            }
+            .acc2-1 {
+                width: 170px;
+            }
+            .acc2-2 {
+                width: 100px;
+            }
+            .RedMushroom {
+                width: 100px;
+                bottom: 0;
+            }
+            .Mushback{
+                left: 10px;
+                bottom: 10px;
+            }
+            .Mush_Textbox {
+                left: 8vw;
+                .Mush_description {
+                    .descript1 {
+                        width: 100%;
+                        line-height: 10px;
+                        font-size: 0.6rem;
+                    }
+                    .descript2 {
+                        font-size: 1.2rem;
+                        line-height: 50px;
+                    }
+                    .descript3 {
+                        font-size: 0.6rem;
+                        overflow-wrap: break-word;
+                    }
+                }
+            }
+        }
+
+        }
+}
+
+@media screen and (max-width: 400px) {
+    .Mush_background{
+        .page3_layout{
+            .acc1{
+                width: 40px;
+            }
+            .acc1-1 {
+                width: 40px;
+            }
+            .acc2-1 {
+                width: 100px;
+            }
+            .acc2-2 {
+                width: 80px;
+            }
+            .acc2 {
+                width: 90px;
+            }
+            .RedMushroom {
+                width: 80px;
+                bottom: 0;
+            }
+            .Mushback{
+                left: 10px;
+                bottom: 10px;
+            }
+            .Mush_Textbox {
+                left: 10vw;
+                .Mush_description {
+                    .descript1 {
+                        width: 80%;
+                        line-height: 10px;
+                        font-size: 12px;
+                    }
+                    .descript2 {
+                        font-size: 1.2rem;
+                        line-height: 50px;
+                    }
+                    .descript3 {
+                        font-size: 0.5rem;
+                        overflow-wrap: break-word;
+                    }
+                }
+            }
+        }
+
+        }
+
+
+}
+
+
+
+//폴더블 전면
+@media screen and (max-width: 300px) {
+    
+    .D-AD_description {
+        margin-left: 5%;
+        margin-right:5%;
+    }
+
+    .descript1 {
+        font-size: 0.3rem;
+        line-height: 30px;
+    }
+
+    .descript2 {
+        font-size: 0.9rem;
+        line-height: 40px;
+    }
+
+    .descript3 {
+        font-size: 0.5rem;
+    }
+}
+
+//모바일 가로
+@media screen and (max-height: 440px) {
+    .D-AD_description {
+        margin-left: 5%;
+    }
+
+    .descript1 {
+        font-size: 0.6rem;
+    }
+
+    .descript2 {
+        font-size: 2rem;
+        line-height: 60px;
+    }
+
+    .descript3 {
+        font-size: 0.9rem;
+    }
+
+}
