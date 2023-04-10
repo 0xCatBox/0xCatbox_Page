@@ -13,10 +13,8 @@ const TeamVision = () => {
             <div className="vision_text">{t("We will manage personal data and derivative data using DID, and we will create an auth system that people can use easily with the WebAuthn method, without knowing if they are using blockchain or not. This service is different from existing wallets. In this service, people can store and utilize digital assets and various data simultaneously. Furthermore, through YourD auth system, people will be able to easily log in to other dapp services. ")}</div>
             <div className="vision_text">{t("Lastly, there is the D-ad service, which stands for decentralized advertising. This service is an advertising service optimized for the fourth industrial revolution and the Web3 world. The easiest way to summarize this service is that it allows targeted advertising without collecting personal information. This service will be conducted in two ways: CtoC and BtoB, and there is also the advantage of making advertising easily available for individuals at a low cost.")}</div>
             <div className="vision_text">{t("We believe in establishing individual data sovereignty and redistributing wealth through it. Therefore, we will provide an infrastructure application that people can own and manage all personal and derivative data, as well as services that can use and utilize them. ")}</div>
-
         </div >
       </div>
-      
     </div>
   );
 };
