@@ -5,13 +5,13 @@ const Footer = () => {
     
     return (
       <div className="footer">
-        <FiGithub
+        {/* <FiGithub
           title="Go to 0xCatbox Github"
           className="git"
           size={30}
           onClick={() => window.open("https://github.com/0xCatBox")}
         />
-        <div className="footer_title">0xcatbox</div>
+        <div className="footer_title">0xcatbox</div> */}
         <FiMail
         title="Contact"
           className="mail"
