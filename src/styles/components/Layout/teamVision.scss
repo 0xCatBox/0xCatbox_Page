@@ -1,32 +1,43 @@
 .Team_Vision_Section {
-    padding: 10%;
-    width: 80%;
+    background: #82887C;
+    overflow: visible;
+    height: fit-content;
+    position: relative;
+    // box-shadow: 0 -10px 0 white;
+    z-index: 0;
+    padding-bottom: 40px;
 }
 
 .Team_vision {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 80%;
+    height: auto;
+    padding-top: 10%;
+    padding-left: 10%;
     font-family: 'Ethnocentric';
     font-size: 1.8rem;
-    align-items: center;
-    height: auto;
     color: #F4E45B;
+    align-items: center;
+    
 }
 
 .vision {
+    display: flex;
     position: relative;
     font-family:'manrope Regular';
-
     flex-direction: column;
-    width: 80%;
-    margin-top: 5%;
-    margin-left: 15%;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 3%;
     font-size: 1rem;
     color: #FFFFFF;
+    align-items: center;
 }
 
 .vision_text {
+    width: 80%;
+    align-items: center;
     height: auto;
     margin-bottom: 5%;
     word-break: keep-all;
@@ -41,7 +52,6 @@
     }
 
     .vision {
-        margin-left: 10%;
         font-size: 0.9rem;
     }
 }
@@ -54,7 +64,7 @@
 
     .vision {
         margin-left: 0;
-        width: 100%;
+        width: 80%;
         font-size: 0.8rem;
         margin-top: 10%;
     }
@@ -66,7 +76,7 @@
         font-size: 0.8rem;
     }
     .vision {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }
 

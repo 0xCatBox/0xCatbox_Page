@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 const TeamVision = () => {
   const { t } = useTranslation();
   return (
-    <div className="page4_layout">
       <div className="Team_Vision_Section">
         <div className="Team_vision">Team Vision</div>
         <div className="vision">
@@ -15,7 +14,6 @@ const TeamVision = () => {
             <div className="vision_text">{t("We believe in establishing individual data sovereignty and redistributing wealth through it. Therefore, we will provide an infrastructure application that people can own and manage all personal and derivative data, as well as services that can use and utilize them. ")}</div>
         </div >
       </div>
-    </div>
   );
 };
 
